@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <form onsubmit="return false">
+            <h1>Sign-Up Now</h1>
+            <div class="field">
+                <label for="firstName">First Name</label>
+                <input name="firstName" placeholder="First Name">
+            </div>
+            <div class="field">
+                <label for="lastName">Last Name</label>
+                <input name="lastName" placeholder="Last Name">
+            </div>
+            <div class="field">
+                <label for="email">Email</label>
+                <input name="email" placeholder="Email">
+            </div>
+            <button>Start</button>
+        </form>
+    </div>
+</body>
+</html>
+
+<style>
+    html,
+body {
+    height: 100%;
+    margin: 0;
+    background: white;
+}
+body {
+    -ms-flex-align: center;
+    align-items: center;
+    display: -ms-flexbox;
+    display: flex;
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.75;
+}
+.container {
+    margin: 0 auto;
+}
+form {
+    text-align: center;
+}
+h1 {
+    font-size: 2.5em;
+    margin: 0 0 .75em;
+}
+.field {
+    margin-bottom: 1.5em;
+    position: relative;
+}
+label {
+    background: #fff;
+    color: #4481c4;
+    font-size: 1.25em;
+    font-weight: 600;
+    left: .75em;
+    opacity: 0;
+    padding: 0 .25em;
+    position: absolute;
+    top: 2em;
+    transition: all 0.1s linear;
+    z-index: -1;
+}
+label.on {
+    color: #4481c4;
+}
+label.show {
+    opacity: 1;
+    top: -1em;
+    z-index: 1;
+}
+input {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1.75em;
+    padding: .5em;
+}
+button {
+    background: #03a9c4;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1.5em;
+    margin-top: .75em;
+    padding: .75em;
+    text-transform: uppercase;
+}
+</style>

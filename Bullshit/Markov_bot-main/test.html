@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+</head>
+<body>
+    <form method="post" action="/sub">
+        <input type="text" name="主题" placeholder="请输入主题">
+        <input type="text" name="字数" placeholder="请输入字数">
+        <input type="submit" value="生成"/>
+    </form>
+    <div >
+
+        <input type="radio"  name="c_guomin"   value="yes" style="align: bottom;margin-left:20pt;margin-right:10pt"
+        οnclick="document.getElementById('gmwp').style.display='';document.getElementById('label').style.display='' " />有      
+        <input type="radio"  name="c_guomin"   value="no" style="align: bottom;margin-left:20pt;margin-right:10pt" 
+        οnclick="document.getElementById('gmwp').style.display='none';document.getElementById('label').style.display='none';
+        document.getElementById('gmwp').value=''"/>没有
+        
+        
+        </div>
+        <div style="font-family:microsoft yahei;font-size:22pt;padding-left:50pt;padding-top:10pt;color:#4F4F4F"> 
+        <label id="label" style="display:none" >请输入名称：<br></label>
+        <input  type="text" name="c_guomin_name" id="gmwp" style="display:none"
+        style="align: bottom;margin-left:20pt;margin-right:10pt;margin-top:10pt"  />
+         </div>
+</body>
+</html>

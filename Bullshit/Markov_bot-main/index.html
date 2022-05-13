@@ -1,0 +1,76 @@
+
+
+<html>
+  <head>
+    <title>基于马尔科夫链的文章生成器</title>
+    <meta http-equiv="content-type" content="txt/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  </head>
+  <body>
+    <div id="主体">
+      <div id="标题">文章生成器</div>
+      <div id="主题">
+        <form>
+          <span>主题</span>
+          <input id="zt"></input>
+          <span>字数</span>
+          <input id="zs"></input>
+          <input id="生成" type="submit" value="生成"></input>
+        </form>
+      </div>
+      <div id="文章"></div>
+    </div>
+  </body>
+</html>
+
+
+<style>
+body{
+  margin: 0;
+}
+#主体{
+  border: 2px solid #333333;
+  margin: 20px;
+  padding: 20px;
+  background: #f8f8f8;
+}
+#标题{
+  font-size: 3rem;
+  line-height: 3rem;
+  text-align: center;
+}
+#主题{
+  text-align: center;
+  margin-top: 6px;
+  font-size: 0px;
+}
+#主题 span{
+  font-size: 2rem;
+  vertical-align: baseline;
+  margin-left: 6px;
+}
+#主题 #zt,#zs{
+  border: none;
+  border-bottom: #666666 2px solid;
+  padding: 1px 0 0 0;
+  margin: 0px 6px 0 6px;
+  vertical-align: baseline;
+  font-size: 2rem;
+  background: #f8f8f8;
+  color: #333333;
+  text-align: center;
+}
+#主题 #生成{
+  border: 0;
+  padding: 3px 7px 3px 7px;
+  margin: 0;
+  font-size: 1.4rem;
+  background: #454545;
+  color: #efefef;
+}
+#文章 div{
+  margin-top: 6px;
+  font-size: 2rem;
+  text-align: justify;
+}
+</style>
